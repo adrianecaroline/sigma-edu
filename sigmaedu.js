@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(function(link) {
             link.style.color = '#64748b';
             if (link.getAttribute('href') === '#' + current) {
-                link.style.color = '#10B981';
+                link.style.color = '#A855F7';
             }
         });
     });

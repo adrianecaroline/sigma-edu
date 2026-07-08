@@ -58,16 +58,10 @@ body {
 }
 
 .logo-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
-    background: #10B981;
-    color: white;
     border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: 800;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -85,13 +79,13 @@ body {
 }
 
 .nav-links a:hover {
-    color: #10B981;
+    color: #A855F7;
 }
 
 /* ===== Hero Section ===== */
 .hero {
     padding: 140px 0 80px;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #F5F3FF 0%, #ffffff 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -107,8 +101,8 @@ body {
 .hero-badge {
     display: inline-block;
     padding: 8px 16px;
-    background: rgba(16, 185, 129, 0.1);
-    color: #10B981;
+    background: rgba(168, 85, 247, 0.1);
+    color: #A855F7;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -124,7 +118,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #A855F7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -150,7 +144,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 800;
-    color: #10B981;
+    color: #A855F7;
 }
 
 .stat-label {
@@ -177,7 +171,7 @@ body {
     display: flex;
     gap: 8px;
     padding: 16px 20px;
-    background: #10B981;
+    background: linear-gradient(135deg, #2DD4BF 0%, #A855F7 100%);
 }
 
 .card-dot {
@@ -226,7 +220,7 @@ body {
 }
 
 .chat-message.user p {
-    background: #10B981;
+    background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
     color: white;
     border-bottom-right-radius: 4px;
 }
@@ -245,8 +239,8 @@ body {
 .section-tag {
     display: inline-block;
     padding: 6px 14px;
-    background: rgba(16, 185, 129, 0.1);
-    color: #10B981;
+    background: rgba(168, 85, 247, 0.1);
+    color: #A855F7;
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -285,7 +279,7 @@ body {
 }
 
 .sobre-text strong {
-    color: #10B981;
+    color: #A855F7;
 }
 
 /* Brain Animation */
@@ -298,7 +292,9 @@ body {
 }
 
 .brain-icon {
-    font-size: 6rem;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
     z-index: 10;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -311,7 +307,7 @@ body {
 .brain-circle {
     position: absolute;
     border-radius: 50%;
-    border: 2px solid rgba(16, 185, 129, 0.3);
+    border: 2px solid rgba(168, 85, 247, 0.3);
     animation: expand 3s ease-in-out infinite;
 }
 
@@ -341,7 +337,7 @@ body {
 /* ===== Funcionalidades Section ===== */
 .funcionalidades {
     padding: 100px 0;
-    background: #f8fafc;
+    background: #FAF5FF;
 }
 
 .features-grid {
@@ -410,7 +406,7 @@ body {
 .step-number {
     width: 50px;
     height: 50px;
-    background: #10B981;
+    background: linear-gradient(135deg, #2DD4BF 0%, #A855F7 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -440,7 +436,7 @@ body {
 .step-line {
     width: 2px;
     height: 40px;
-    background: #10B981;
+    background: #A855F7;
     margin-left: 24px;
     opacity: 0.3;
 }
@@ -448,7 +444,7 @@ body {
 /* ===== Benefícios Section ===== */
 .beneficios {
     padding: 100px 0;
-    background: #f8fafc;
+    background: #FAF5FF;
 }
 
 .beneficios-grid {
@@ -491,7 +487,7 @@ body {
 /* ===== CTA Section ===== */
 .cta {
     padding: 100px 0;
-    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #A855F7 100%);
 }
 
 .cta-content {
@@ -524,6 +520,23 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: white;
+    color: #31cfc1;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 60px 0;
@@ -545,7 +558,7 @@ body {
 }
 
 .footer-brand .logo-icon {
-    background: rgba(255, 255, 255, 0.1);
+    filter: brightness(1.2);
 }
 
 .footer-brand p {
